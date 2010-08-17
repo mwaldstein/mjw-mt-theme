@@ -1,0 +1,100 @@
+body {
+  background-color: #f2f2f2;
+  color: black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.8em;
+  line-height: 20px;
+  margin: 0px
+  padding: 0px;
+}
+
+#container {
+  margin: 0px auto;
+  border: 0px solid #333;
+  background-color: white;
+  width: 900px;
+}
+
+#header {
+  height: 135px;
+  border-bottom: 0px solid #333;
+  background-image: url('header.png');
+}
+
+#mainnav {
+  background-color: #ffe6d5;
+  border-bottom: 2px solid #ddd;
+  border-top: 2px solid #ddd;
+  height: 60px;
+}
+
+#mainnav ul {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.6em;
+}
+
+#mainnav li {
+  display: inline;
+  float: left;
+}
+
+#mainnav li a, #mainnav li a:hover {
+  border-left: 1px solid #eee;
+  color: gray;
+  display: block;
+  height: 38px;
+  padding-top: 22px;
+  text-decoration: none;
+  width: 298px;
+}
+
+#mainnav li a:hover,
+#mainnav li a.active 
+{
+    background-color: #eff3d5;
+}
+
+#content {
+  width: 900;
+  margin-top: 30px;
+  padding-left: 0px;
+}
+
+#content-main {
+  width: 830px;
+  margin-left: 35px;
+}
+
+#rightnav {
+  float: right;
+  width: 275px;
+  border: 1px solid #eee;
+  background-color: #f9fbf1;
+  padding: 10px 15px;
+  padding: 10px 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.widget-header {
+  border-top: 1px solid: #eee;
+  border-bottom: 1px solid: #eee;
+}
+
+.entry {
+  text-align: justify;
+}
+
+.entry h2 {
+  display: inline-block;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 0px;
+}
+
+.byline {
+  font-size: 0.8em;
+  color: #aaa;
+}
