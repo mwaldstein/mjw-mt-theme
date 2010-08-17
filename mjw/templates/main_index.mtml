@@ -7,45 +7,20 @@
     <title><$mt:BlogName encode_html="1"$></title>
 </head>
 <body id="<$mt:BlogThemeID$>" class="mt-main-index <$mt:Var name="page_layout"$>">
-    <div id="container">
-        <div id="container-inner">
-
-
-            <$mt:Include module="Banner Header"$>
-
-
-            <div id="content">
-                <div id="content-inner">
-
-
-                    <div id="alpha">
-                        <div id="alpha-inner">
-<mt:Entries>
-                            <mt:Ignore><!-- Use the Entry Summary module for each entry published on this page --></mt:Ignore>
-                            <$mt:Include module="Entry Summary"$>
-</mt:Entries>
-
-
-                            <div class="content-nav">
-                                <a href="<$mt:Link template="archive_index"$>">Archives</a>
-                            </div>
-
-
-                        </div>
-                    </div>
-
-
-                    <$mt:Include module="Sidebar"$>
-
-
-                </div>
-            </div>
-
-
-            <$mt:Include module="Banner Footer"$>
-
-
-        </div>
-    </div>
+  <div id="container">
+    <$mt:Include module="Banner Header"$>
+    <div id="content">
+      <div id="content-main">
+        <$mt:Include module="Sidebar"$>
+        <mt:Entries>
+          <$mt:Include module="Entry Summary"$>
+        </mt:Entries>
+        <div class="content-nav">
+          <a href="<$mt:Link template="archive_index"$>">Archives</a>
+        </div> <!-- #content-nav -->
+        <$mt:Include module="Banner Footer"$>
+      </div> <!-- #content-main -->
+    </div> <!-- #content -->
+  </div> <!-- #container -->
 </body>
 </html>
